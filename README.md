@@ -1,0 +1,1 @@
+# xodas-auto-static
