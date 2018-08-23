@@ -1,0 +1,206 @@
+.content {
+	&--contacts {
+		overflow: hidden;
+		.section-title {
+			font: 700 normal 20px $OpenSans;
+			margin-bottom: 37px;
+			padding-left: 12px;
+			&:before {
+				left: -1px;
+			}
+			&:after {
+				width: 480px;
+				top: 35px;
+				@media #{$mobile} {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.contacts {
+	padding: 70px 0;
+	&_left {
+		border-left: 1px solid $light-grey;
+		span {
+			font-weight: 600;
+			font-size: 18px;
+			text-transform: uppercase;
+			margin-right: 10px;
+			@media #{$tablet} {
+				font-size: 16px;
+			}
+		}
+		p, a {
+			display: inline-block;
+			font-family: $GothicC;
+			@media #{$tablet} {
+				font-size: 12px;
+			}
+		}
+	}
+	&_info {
+		li {
+			padding-left: 70px;
+			margin-bottom: 30px;
+			position: relative;
+			@media #{$tablet} {
+				padding-left: 50px;
+			}
+			&:last-child {
+				padding-left: 20px;
+				margin-bottom: 0px;
+				&:before {
+					display: none;
+				}
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url(../images/contacts-sprite.png);
+				height: 26px;
+				width: 26px;
+				left: 20px;
+				top: -5px;
+				@media #{$tablet} {
+					left: 15px;
+				}
+			}
+			&:first-child {
+				&:before {
+					background-position: -129px;
+				}
+			}
+			&:nth-child(2) {
+				&:before {
+					width: 25px;
+					height: 20px;
+					top: 0px;
+					background-position: -33px;
+				}
+			}
+			&:nth-child(3) {
+				&:before {
+					background-position: -205px;
+				}
+			}
+			&:nth-child(4) {
+				&:before {
+					background-position: -88px;
+				}
+			}
+		}
+	}
+	&_socials {
+		display: inline-block;
+		vertical-align: sub;
+		li {
+			float: left;
+			padding: 0px;
+			margin-right: 20px;
+			margin-bottom: 0px;
+			&:before {
+				display: none;
+			}
+			&:last-child {
+				padding: 0px;
+				margin-right: 0px;
+			}
+			span {
+				margin-right: 0px;
+				color: #d2d1d1;
+				font-weight: 400;
+				transition: $main_transition;
+				&:hover {
+					color: #000;
+				}
+			}
+		}
+	}
+	&_right {
+		.section-title {
+			margin-bottom: 5px;
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+	&_form {
+		.form-group {
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url(../images/contacts-sprite.png);
+				height: 26px;
+				width: 26px;
+				left: 15px;
+				top: 11px;
+				@include addPrefix(filter, invert(50%));
+			}
+			&:first-child {
+				&:before {
+					
+					background-position: -5px;
+				}
+			}
+			&:nth-child(2) {
+				&:before {
+					top: 15px;
+					width: 26px;
+					height: 20px;
+					background-position: -32px;
+				}	
+			}
+			&:nth-child(3) {
+				&:before {
+					background-position: -88px;
+				}
+			}
+			&:nth-child(4) {
+				&:before {
+					background-position: -166px;
+					top: 5px;
+				}
+			}
+		}
+		input, textarea {
+			padding-left: 50px;
+			border: 1px solid $light-grey;
+			border-radius: 0px;
+			box-shadow: none;
+			@include addPrefixPlaceholder (placeholder, font-style, $GothicC);
+		}
+		input {
+			
+			height: 50px;
+			
+		}
+		button {
+			height: 50px;
+			width: 140px;
+			font: 700 normal 15px $OpenSans;
+			border: 1px solid #000;
+			background-color: transparent;
+			margin-top: 15px;
+			text-transform: uppercase;
+			transition: $main_transition;
+			&:hover {
+				background-color: #000;
+				color: $main_color;
+			}
+		}
+	}
+
+}
+.map {
+	&_blk {
+		min-height: 470px;
+		margin-bottom: 50px;
+		@include addPrefix(filter, grayscale(100%));
+	}
+}

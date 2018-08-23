@@ -1,0 +1,32 @@
+section.order
+	.container
+		.order_block
+			.row
+				.col-md-6
+					.order_left
+						.order_name 
+							h4.wow.fadeIn xodas auto
+						.order_contacts
+							p.wow.fadeIn(data-wow-delay='0.5s') Keas 69 Str.15234, Ukraine Kharkov
+							ul.order_contacts_list.wow.fadeIn(data-wow-delay='1s')
+								li 
+									
+									a(href="mailto:xodasauto@gmail.com") 
+										i.fa.fa-envelope-o(aria-hidden='true')
+										| xodasauto@gmail.com
+								li 
+									
+									a(href="tel+380970780890")
+										i.fa.fa-phone(aria-hidden='true')
+										| (097) 07 80 890
+				.col-md-6
+					.order_right
+						h5 Задать вопрос:
+						form.wow.fadeIn
+							.form-group.form-group--half.wow.flipInX(data-wow-delay='0.5s', data-wow-duration='1s')
+								input#name.form-control(type='name', placeholder="name")
+							.form-group.form-group--half.wow.flipInX(data-wow-delay='0.5s', data-wow-duration='1s')
+								input#email.form-control.wow.flipInX(type='email', placeholder="e-mail", data-wow-delay='0.75s', data-wow-duration='1s')
+							.form-group
+								textarea#message.form-control.wow.flipInX(rows='2' placeholder="message", data-wow-delay='1s', data-wow-duration='1s')
+								button.wow.flipInY(type='submit', data-wow-delay='1.5s', data-wow-duration='1s') Send

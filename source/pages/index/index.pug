@@ -1,0 +1,116 @@
+extends ../base
+
+block title
+	title Index
+
+block main
+	.content
+		.banner
+			#myCarousel.carousel.slide(data-ride='carousel', data-interval='')
+				.container
+					ol.carousel-indicators
+						li.active(data-target='#myCarousel', data-slide-to='0')
+						li(data-target='#myCarousel', data-slide-to='1')
+						li(data-target='#myCarousel', data-slide-to='2')
+				.carousel-inner
+					.item.active
+						.container
+							.carousel_desc.wow.fadeIn(data-duration='1s')
+								.carousel_desc_title.wow.fadeIn(data-duration='1s', data-wow-delay='0.5s') detailing studio
+								.carousel_desc_text.wow.fadeIn(data-duration='1s', data-wow-delay='0.75s') Lorem ipsum – псевдо-латинский текст, который 
+								a(href="#", data-wow-duration='1s', data-wow-delay='1.25s').btn.wow.fadeIn Узнать больше
+						.item_img(style='background-image: url('+ require("./images/banner-photo-1.jpg") +')')
+					.item
+						.container
+							.carousel_desc.wow.fadeIn(data-duration='1s')
+								.carousel_desc_title.wow.fadeIn(data-duration='1s', data-wow-delay='0.5s') detailing studio
+								.carousel_desc_text.wow.fadeIn(data-duration='1s', data-wow-delay='0.75s') Lorem ipsum – псевдо-латинский текст, который 
+								a(href="#", data-wow-duration='1s', data-wow-delay='1.25s').btn.wow.fadeIn Узнать больше
+						.item_img(style='background-image: url('+ require("./images/banner-photo-1.jpg") +')')
+					.item
+						.container
+							.carousel_desc.wow.fadeIn(data-duration='1s')
+								.carousel_desc_title.wow.fadeIn(data-duration='1s', data-wow-delay='0.5s') detailing studio
+								.carousel_desc_text.wow.fadeIn(data-duration='1s', data-wow-delay='0.75s') Lorem ipsum – псевдо-латинский текст, который 
+								a(href="#", data-wow-duration='1s', data-wow-delay='1.25s').btn.wow.fadeIn Узнать больше
+						.item_img(style='background-image: url('+ require("./images/banner-photo-1.jpg") +')')
+		section.brands
+			.container
+				h2.section-title.wow.slideInLeft() Изпользуем только премиальные бренды
+				.brands_block
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-1.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-2.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-1.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-2.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-1.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-2.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-1.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-2.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-1.png") +')', data-wow-duration='1.5s').wow.flash
+					.brands_box
+						.brands_img(style='background-image: url('+ require("./images/brands-photo-2.png") +')', data-wow-duration='1.5s').wow.flash
+		include ../services
+		include ../videos
+		section.our-works
+			.container
+				h2.section-title.wow.slideInLeft() наши работы
+				.our-works_block
+					ul.nav.nav-tabs
+						li.active
+							a(data-toggle='tab', href='#menu1').wow.flipInX Все
+						li
+							a(data-toggle='tab', href='#menu2', data-wow-delay='0.5s').wow.flipInX Полировка
+						li
+							a(data-toggle='tab', href='#menu3', data-wow-delayduration='1.5s').wow.flipInX Нано покрытие
+						li
+							a(data-toggle='tab', href='#menu4', data-wow-duration='1.5s').wow.flipInX Покраска авто
+					//- .sliderui
+					.tab-content
+						#menu1.tab-pane.fade.in.active
+							a(href=require("./images/photo-9.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-9.jpg") + ')', data-wow-delay="0.1s").wow.fadeIn.our-works_box
+							a(href=require("./images/photo-10.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-10.jpg") + ')', data-wow-delay="0.2s").wow.fadeIn.our-works_box
+							a(href=require("./images/photo-11.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-11.jpg") + ')', data-wow-delay="0.3s").wow.fadeIn.our-works_box
+							a(href=require("./images/photo-12.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-12.jpg") + ')', data-wow-delay="0.4s").wow.fadeIn.our-works_box
+							a(href=require("./images/photo-13.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-13.jpg") + ')', data-wow-delay="0.5s").wow.fadeIn.our-works_box
+							a(href=require("./images/photo-14.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-14.jpg") + ')', data-wow-delay="0.6s").wow.fadeIn.our-works_box
+							a(href=require("./images/photo-15.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-15.jpg") + ')', data-wow-delay="0.7s").wow.fadeIn.our-works_box
+							a(href=require("./images/photo-16.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-16.jpg") + ')', data-wow-delay="0.8s").wow.fadeIn.our-works_box
+						#menu2.tab-pane.fade
+							a(href=require("./images/photo-14.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-14.jpg") + ')').our-works_box
+							a(href=require("./images/photo-16.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-16.jpg") + ')').our-works_box
+							a(href=require("./images/photo-15.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-15.jpg") + ')').our-works_box
+							a(href=require("./images/photo-13.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-13.jpg") + ')').our-works_box
+							a(href=require("./images/photo-12.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-12.jpg") + ')').our-works_box
+							a(href=require("./images/photo-11.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-11.jpg") + ')').our-works_box
+							a(href=require("./images/photo-10.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-10.jpg") + ')').our-works_box
+							a(href=require("./images/photo-9.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-9.jpg") + ')').our-works_box
+						#menu3.tab-pane.fade
+							a(href=require("./images/photo-10.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-10.jpg") + ')').our-works_box
+							a(href=require("./images/photo-9.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-9.jpg") + ')').our-works_box
+							a(href=require("./images/photo-11.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-11.jpg") + ')').our-works_box
+							a(href=require("./images/photo-13.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-13.jpg") + ')').our-works_box
+							a(href=require("./images/photo-12.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-12.jpg") + ')').our-works_box
+							a(href=require("./images/photo-15.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-15.jpg") + ')').our-works_box
+							a(href=require("./images/photo-14.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-14.jpg") + ')').our-works_box
+							a(href=require("./images/photo-16.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-16.jpg") + ')').our-works_box
+						#menu4.tab-pane.fade
+							a(href=require("./images/photo-14.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-14.jpg") + ')').our-works_box
+							a(href=require("./images/photo-16.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-16.jpg") + ')').our-works_box
+							a(href=require("./images/photo-15.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-15.jpg") + ')').our-works_box
+							a(href=require("./images/photo-13.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-13.jpg") + ')').our-works_box
+							a(href=require("./images/photo-12.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-12.jpg") + ')').our-works_box
+							a(href=require("./images/photo-11.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-11.jpg") + ')').our-works_box
+							a(href=require("./images/photo-10.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-10.jpg") + ')').our-works_box
+							a(href=require("./images/photo-9.jpg"), data-fancybox="gallery", style='background-image: url(' + require("./images/photo-9.jpg") + ')').our-works_box
+		include ../blog
+		include ../order
+		include ../scroll-to-top

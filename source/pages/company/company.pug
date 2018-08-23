@@ -1,0 +1,77 @@
+extends ../base
+
+block title
+	title Company
+
+block main
+	.content--company
+		.banner.banner--company
+			.banner_top
+				.banner_top_content
+					h1.wow.flipInX О компании
+					ul
+						li
+							a(href="./", data-wow-delay='0.5s').wow.flipInX Главная
+						li
+							a(href="./", data-wow-delay='1s').wow.flipInX О компании
+			.banner_main
+				.container
+					.row
+						.col-lg-6.col-md-7
+							.banner_main_left
+								.banner_what-we-do
+									h2.section-title.wow.fadeInDown(data-wow-duration='0.5s') What we do
+									p.wow.fadeIn(data-wow-delay='0.5s').
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia, sapien faucibus sollicitudin ultricies, est libero congue dui, et lobortis quam neque in ante. Donec ullamcorper aliquet nibh eu malesuada. Nam ac erat ut orci consectetur iaculis. Ut vel diam massa. Fusce sodales mi justo, nec vehicula erat volutpat sit amet. Fusce porta, quam sit amet tempus blandit, arcu nibh finibus nisi, ac interdum justo velit a risus. Curabitur elementum mauris a augue varius dictum. In accumsan est arcu, et malesuada ante pulvinar sed. Sed nisl lorem, hendrerit nec odio ac, faucibus fringilla arcu. Maecenas mollis felis non sapien iaculis, sodales suscipit nisl laoreet. Suspendisse vitae porttitor nibh. Phasellus eleifend sapien fermentum sapien tempor, eget lacinia nibh tincidunt. Suspendisse finibus orci diam, vitae porta diam fringilla ut. Proin quis tortor pretium magna lobortis volutpat ac ut magna. Vestibulum sed condimentum tellus, vel dapibus sem. Maecenas dictum tristique placerat.
+								.banner_why-we
+									h2.section-title.wow.fadeInDown(data-wow-delay='1s', data-wow-duration='0.5s') Why we
+									.banner_why-we_block
+										ul.row
+											li.col-sm-4
+												.banner_why-we_box.wow.fadeIn(data-wow-delay='1.5s')
+													h3 Химчистка салона
+													p.
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisi odio, id tempor velit luctus nec.
+											li.col-sm-4
+												.banner_why-we_box.wow.fadeIn(data-wow-delay='1.75s')
+													h3 Химчистка салона
+													p.
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisi odio, id tempor velit luctus nec.
+											li.col-sm-4
+												.banner_why-we_box.wow.fadeIn(data-wow-delay='2s')
+													h3 Химчистка салона
+													p.
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisi odio, id tempor velit luctus nec.
+						.col-lg-6.col-md-5
+							.banner_main_right.wow.fadeIn(data-wow-duration='2s')
+								.banner_img(style='background-image: url(' + require("./images/banner-photo-6.jpg") + ')')
+		section.total-stats
+			.total-stats_block
+				.container
+					.total-stats_box
+						.circle
+							//-.circle_wrapper
+								//-input(type="text", value="0", class="dial", data-readOnly="true", data-thickness="0.15", data-fgColor="#fff", data-bgColor="#8e8e8e", data-width="62", data-height="62", data-fontSize="32" data-font="AvantGardeGothicC")#circle1
+							h4#DynamicNumber1.total-stats_box_num 0
+						p.total-stats_box_txt.
+							Lorem ipsum dolor sit amet, consectetur
+					.total-stats_box
+						.circle
+							h4#DynamicNumber2.total-stats_box_num 0
+						p.total-stats_box_txt.
+							Lorem ipsum dolor sit amet, consectetur
+					.total-stats_box
+						.circle
+							//- .circle_wrapper
+							//- 	input(type="text", value="0", class="dial", data-readOnly="true", data-thickness="0.15", data-fgColor="#fff", data-bgColor="#8e8e8e", data-width="62", data-height="62", data-fontSize="32" data-font="AvantGardeGothicC")#circle2
+							h4#DynamicNumber3.total-stats_box_num 0
+						p.total-stats_box_txt.
+							Lorem ipsum dolor sit amet, consectetur
+					.total-stats_box
+						.circle
+							h4#DynamicNumber4.total-stats_box_num 0
+						p.total-stats_box_txt.
+							Lorem ipsum dolor sit amet, consectetur	
+		include ../services
+		include ../blog
+		include ../order

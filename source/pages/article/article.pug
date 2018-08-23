@@ -1,0 +1,95 @@
+extends ../base
+
+block title
+	title Article
+
+block main
+	.content--article
+		.banner--blog-pg
+			.banner_top
+				.banner_top_content
+					h1 Блог
+					ul
+						li
+							a(href="./") Главная
+						li
+							a(href="blog-page.html") Блог
+						li
+							a(href="article.html") Статья
+		section.blog-pg.article
+			.container
+				.article_block
+					.blog-pg_news
+						a(href="article.html").section-title The perfect place to enjo
+						.blog-pg_data
+							span.blog-pg_month December 21
+							span.blog-pg_year 2017
+						.blog-pg_inner
+							.blog-pg_img(style='background-image: url(' + require("./images/photo-18.jpg") + ')')
+							.article_text
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat risus purus, ut tempor tellus sollicitudin sed. Nunc tempor leo non diam sodales vestibulum. Morbi ac lectus sapien. Integer vel auctor nunc. Quisque interdum lectus at erat ullamcorper, vitae consectetur magna bibendum. Integer auctor, quam sit amet convallis consectetur, tortor nisi malesuada enim, a placerat felis massa sed felis. Curabitur sodales libero sed tincidunt tempor. Nam tincidunt arcu vitae nisl vulputate elementum. Nulla eu leo libero. Curabitur semper, diam id porttitor efficitur, quam augue lacinia arcu, sit amet tempus tellus mi a dolor.
+								p.
+									Donec vulputate ante non congue ultricies. Nunc massa ante, volutpat non venenatis ut, auctor vel leo. Morbi sagittis porta semper. Fusce blandit purus ut urna euismod, ac facilisis diam venenatis. Praesent luctus finibus lorem aliquam volutpat. Pellentesque justo mi, fringilla id neque convallis, interdum bibendum justo. Ut vel arcu felis. Donec venenatis tempor pellentesque. Cras pretium tincidunt finibus. Fusce metus velit, placerat in diam eu, commodo ultrices orci. Proin vehicula justo ligula, in condimentum ligula vestibulum nec. Sed eget iaculis nisl.
+								p.
+									Suspendisse et metus nec velit consectetur elementum quis ut diam. Morbi ultricies metus vehicula ligula placerat convallis. Etiam odio elit, commodo ut quam et, ornare blandit turpis. Curabitur augue purus, elementum at urna non, semper feugiat lorem. Aenean ac felis sed est sollicitudin tempus. Maecenas auctor dapibus odio, a vehicula nisi faucibus sed. Cras consectetur mi non luctus vehicula. In in sagittis arcu. Proin lectus diam, vestibulum sed ipsum nec, ultricies convallis lorem. Curabitur et risus non enim iaculis efficitur. Integer suscipit volutpat euismod. Etiam luctus leo ut enim laoreet mollis.
+							.blog-pg_bottom.clearfix
+								p Share with:
+								ul.contacts_socials
+									li
+										a(href="#")
+											span.fa.fa-instagram
+									li
+										a(href="#")
+											span.fa.fa-facebook
+									li
+										a(href="#")
+											span.fa.fa-youtube-play
+									li
+										a(href="#")
+											span.fa.fa-twitter
+									li
+										a(href="#")
+											span.fa.fa-vk
+							.article_pagination
+								.row
+									.col-xs-6
+										a(href="#").article_pagination_prev
+											span
+											p.
+												Lorem ipsum dolor sit amet, consectetur
+									.col-xs-6
+										a(href="#").article_pagination_next
+											p.
+												Lorem ipsum dolor sit amet, consectetur
+											span
+					section.blog
+						h2.section-title Latest Post
+						.blog_content
+							.row
+								.col.col-md-6
+									.blog_box
+										.blog_img(style='background-image: url('+ require("./images/photo-4.jpg") +')')
+										.blog_overlay
+											.blog_inner
+												h5
+													a(href="cleaning.html") Химчистка салона
+												p.
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+													Aliquam rhoncus, lacus consequat gravida molestie, 
+													tortor enim rhoncus enim, sit amet dictum enim
+												a.read-more(href="#") узнать больше
+								.col.col-md-6
+									.blog_box
+										.blog_img(style='background-image: url('+ require("./images/photo-4.jpg") +')')
+										.blog_overlay
+											.blog_inner
+												h5
+													a(href="cleaning.html") Химчистка салона
+												p.
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+													Aliquam rhoncus, lacus consequat gravida molestie, 
+													tortor enim rhoncus enim, sit amet dictum enim
+												a.read-more(href="#") узнать больше
+			include ../order
+		

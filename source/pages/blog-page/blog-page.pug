@@ -1,0 +1,158 @@
+extends ../base
+
+block title
+	title Blog
+
+block main
+	.content--blog-pg
+		.banner--blog-pg
+			.banner_top
+				.banner_top_content
+					h1.wow.flipInX Блог
+					ul
+						li.wow.flipInX(data-wow-delay='0.5s')
+							a(href="./") Главная
+						li.wow.flipInX(data-wow-delay='1s')
+							a(href="blog-page.html") Блог
+		section.blog-pg
+			.container
+				.row
+					.col-xs-12.col-md-5.col-md-push-7.col-sm-4.col-sm-push-8
+						.blog-pg_right
+							.blog-pg_search
+								h2.section-title.wow.fadeInDown Search
+								form.blog-pg_search_form(role='search')
+									.input-group
+										input#srch-term.form-control.wow.flipInX(type='text', placeholder='Enter keyword', name='srch-term')
+										.input-group-btn
+											button.btn.wow.flipInX(type='submit') Go!
+							.blog-pg_posts
+								h2.section-title.wow.fadeIn Latest Posts
+								a(href="#").blog-pg_posts_box.wow.fadeInDown
+									p.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									span.
+										December 21, 2017
+								a(href="#").blog-pg_posts_box.wow.fadeInDown
+									p.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									span.
+										December 21, 2017
+								a(href="#").blog-pg_posts_box.wow.fadeInDown
+									p.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									span.
+										December 21, 2017
+								a(href="#").blog-pg_posts_box.wow.fadeInDown
+									p.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									span.
+										December 21, 2017
+							.blog-pg_archives
+								h2.section-title.wow.fadeIn Archives
+								ul
+									li.wow.fadeInDown
+										a(href="#") December 21, 2017
+									li.wow.fadeInDown
+										a(href="#") November 21, 2017
+									li.wow.fadeInDown
+										a(href="#") October 21, 2017
+									li.wow.fadeInDown
+										a(href="#") September 21, 2017
+									li.wow.fadeInDown
+										a(href="#") August 21, 2017
+					.col-xs-12.col-md-7.col-md-pull-5.col-sm-8.col-sm-pull-4
+						.blog-pg_left
+							.blog-pg_news
+								a(href="article.html").section-title.wow.fadeInDown The perfect place to enjo
+								.blog-pg_data
+									span.blog-pg_month.wow.flipInX December 21 
+									span.blog-pg_year.wow.flipInX 2017
+								.blog-pg_inner
+									.blog-pg_img.wow.fadeInLeft(style='background-image: url(' + require("./images/photo-18.jpg") + ')')
+									.blog-pg_bottom.clearfix
+										p.wow.flipInX Share with:
+										ul.contacts_socials
+											li.wow.fadeIn(data-wow-delay='0.5s')
+												a(href="#")
+													span.fa.fa-instagram
+											li.wow.fadeIn(data-wow-delay='0.75s')
+												a(href="#")
+													span.fa.fa-facebook
+											li.wow.fadeIn(data-wow-delay="1s")
+												a(href="#")
+													span.fa.fa-youtube-play
+											li.wow.fadeIn(data-wow-delay='1.25s')
+												a(href="#")
+													span.fa.fa-twitter
+											li.wow.fadeIn(data-wow-delay="1.5s")
+												a(href="#")
+													span.fa.fa-vk
+										a.btn.wow.flipInX(href="article.html", data-wow-delay='0.75s', data-wow-duration='1s') Read More
+							.blog-pg_news
+								a(href="article.html").section-title.wow.fadeInDown The perfect place to enjo
+								.blog-pg_data
+									span.blog-pg_month.wow.flipInX December 21 
+									span.blog-pg_year.wow.flipInX 2017
+								.blog-pg_inner
+									.blog-pg_img.wow.fadeInLeft(style='background-image: url(' + require("./images/photo-19.jpg") + ')')
+									.blog-pg_bottom.clearfix
+										p.wow.flipInX Share with:
+										ul.contacts_socials
+											li.wow.fadeIn(data-wow-delay='0.5s')
+												a(href="#")
+													span.fa.fa-instagram
+											li.wow.fadeIn(data-wow-delay='0.75s')
+												a(href="#")
+													span.fa.fa-facebook
+											li.wow.fadeIn(data-wow-delay="1s")
+												a(href="#")
+													span.fa.fa-youtube-play
+											li.wow.fadeIn(data-wow-delay='1.25s')
+												a(href="#")
+													span.fa.fa-twitter
+											li.wow.fadeIn(data-wow-delay="1.5s")
+												a(href="#")
+													span.fa.fa-vk
+										a.btn.wow.flipInX(href="article.html", data-wow-delay='0.75s', data-wow-duration='1s') Read More
+							.blog-pg_news
+								a(href="article.html").section-title.wow.fadeInDown The perfect place to enjo
+								.blog-pg_data
+									span.blog-pg_month.wow.flipInX December 21 
+									span.blog-pg_year.wow.flipInX 2017
+								.blog-pg_inner
+									.blog-pg_img.wow.fadeInLeft(style='background-image: url(' + require("./images/photo-20.jpg") + ')')
+									.blog-pg_bottom.clearfix
+										p.wow.flipInX Share with:
+										ul.contacts_socials
+											li.wow.fadeIn(data-wow-delay='0.5s')
+												a(href="#")
+													span.fa.fa-instagram
+											li.wow.fadeIn(data-wow-delay='0.75s')
+												a(href="#")
+													span.fa.fa-facebook
+											li.wow.fadeIn(data-wow-delay="1s")
+												a(href="#")
+													span.fa.fa-youtube-play
+											li.wow.fadeIn(data-wow-delay='1.25s')
+												a(href="#")
+													span.fa.fa-twitter
+											li.wow.fadeIn(data-wow-delay="1.5s")
+												a(href="#")
+													span.fa.fa-vk
+										a.btn.wow.flipInX(href="article.html", data-wow-delay='0.75s', data-wow-duration='1s') Read More
+							.blog-pg_pagination
+								.pagination-block
+									.pagination.loop-pagination
+										a.prev.page-numbers(href='#')
+											i.arrow.left
+										a.page-numbers(href='#') 1
+										span.page-numbers.current 2
+										a.page-numbers(href='#') 3
+										span.page-numbers.dots …
+										a.page-numbers(href='#') 10
+										a.next.page-numbers(href='#')
+											i.arrow.right
+						
+		include ../order
+		

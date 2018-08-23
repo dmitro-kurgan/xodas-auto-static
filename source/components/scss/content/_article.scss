@@ -1,0 +1,118 @@
+.content {
+	&--article {
+		@media #{$mobile} {
+			overflow: hidden;
+		}	
+		.blog {
+			.section-title {
+				font: 700 normal 20px $GothicC;
+				margin-bottom: 47px;
+				&:after {
+					
+				}
+			}
+		}
+	}
+}
+.article {
+	&_block {
+		max-width: 1040px;
+		margin: auto;
+	}
+	&_text {
+		line-height: 1.5;
+		padding: 35px 0 15px 0;
+		p {
+			&:nth-child(n+2) {
+				margin-top: 28px;
+			}
+		}
+	}
+	&_pagination {
+		padding: 50px 0;
+		margin-bottom: 85px;
+		border-bottom: 1px solid $light-grey;
+		&_prev, &_next {
+			font: 400 normal 17px $GothicC;
+			text-transform: uppercase;
+			display: inline-block;
+			@media #{$mobile} {
+				position: relative;
+			}
+			span {
+				border: solid #8e8e8e;
+				border-width: 0 2px 2px 0;
+				display: inline-block;
+				padding: 9px;
+				position: relative;
+				transition: $main-transition;
+				@media #{$mobile} {
+					position: absolute;
+					bottom: -30px;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					width: 35px;
+					height: 2px;
+					top: 6px;
+					left: -10px;
+					background-color: #8e8e8e;
+					@include addPrefix (transform, rotate(-135deg));
+					transition: $main-transition;
+				}
+				&:hover {
+					border-color: #000;
+					&:before {
+						background-color: #000;
+					}
+				}
+			}
+			p {
+				display: inline-block;
+				vertical-align: top;
+				@media #{$mobile} {
+					font-size: 15px;
+				}
+			}
+		}
+		&_prev {
+			span {
+				margin-right: 55px;
+				@include addPrefix (transform, rotate(135deg));
+				@media #{$mobile} {
+					left: 0px;
+				}
+			}			
+		}
+		&_next {
+			text-align: right;
+			span {
+				margin-left: 55px;
+				@include addPrefix (transform, rotate(-45deg));
+				@media #{$mobile} {
+					right: 0px;
+				}		
+			}  
+		}
+	}
+	.blog-pg {
+		&_news {
+			.section-title {
+				font: 700 normal 20px $GothicC;
+				margin-top: 15px;
+				margin-bottom: 10px;
+				&:before {
+					display: none;
+				}
+				&:after {
+					width: 480px;
+					top: 28px;
+				}
+			}
+		}
+		&_inner {
+			padding: 0px;
+		}
+	}
+}

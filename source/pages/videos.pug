@@ -1,0 +1,21 @@
+section.videos
+	.container
+		h2.section-title.wow.slideInLeft() Раздел видео
+		.sliderui-2
+		.slick-videos#slickV
+			- for (var i = 0; i < 4; i++) {
+				div
+					.slick-videos_box
+						.slick-videos_video
+							iframe(src="https://www.youtube.com/embed/CzN45Eg9XG4", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen='')
+						.slick-videos_name
+							p.
+								I Flew My Ferrari 6000 Miles To Dubai For PPF
+				div
+					.slick-videos_box
+						.slick-videos_video
+							iframe(src='https://www.youtube.com/embed/lTRftZx2tAo', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+						.slick-videos_name
+							p.
+								High End Detailing Ferrari 458 Finest Signature Detail
+			- }

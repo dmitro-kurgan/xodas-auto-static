@@ -1,0 +1,115 @@
+footer {
+	.footer {
+		overflow: hidden;
+		&_main {
+			border-bottom: 1px solid #000;
+			padding: 15px 0;
+			a {
+				margin-top: 20px;
+				font-size: 33px;
+				@media #{$desctop} {
+					font-size: (33px/1.7);
+					margin-top: (20px/1.7);
+				}
+				@media #{$mobile} {
+					font-size: 33px;
+				}
+			}
+			h6 {
+				margin-top: 25px;
+				font: 400 normal 30px $GothicC;
+				@media #{$desctop} {
+					margin-top: (25px/1.7);
+					font-size: (30px/1.7);
+				}
+				a {
+					text-transform: uppercase;
+					font-weight: 700;
+					font-size: inherit;
+					margin-top: inherit;
+				}
+			}
+			p {
+				margin-top: 20px;
+				font-weight: 600;
+				@media #{$desctop} {
+					margin-top: (20px/1.7);
+				}
+				@media #{$tablet} {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		&_bottom {
+			height: 108px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font: 400 normal 21px $GothicC;
+			@media #{$mobile} {
+				display: block;
+			}
+		}
+		&_copyright {
+			@media #{$mobile} {
+				text-align: center;
+				margin-top: 15px;
+				font-size: 16px;
+			}
+		}
+		&_logo {
+			background: url(../images/unit-space.png)no-repeat center;
+			background-size: cover;
+			width: 152px;
+			height: 62px;
+			display: inline-block;
+			position: relative;
+			margin-top: 15px;
+			&:before {
+				content: 'production by:';
+				position: absolute;
+				top: -26px;
+			}
+			@media #{$mobile} {
+				display: block;
+				margin: auto;
+				margin-top: 50px;
+			}
+		}
+		&_img {
+			width: 210px;
+			height: 210px;
+			background-position: center;
+			background-size: cover;
+			float: right;
+			margin-right: 25px;
+			&:first-child {
+				margin-right: 0px;
+				@media #{$mobile} {
+					margin-right: auto;
+				}
+			}
+			@media #{$full-hd} {
+				width: (210px / 1.176);
+				height: (210px / 1.176);
+			}
+			@media #{$desctop-lg} {
+				width: (210px / 1.333);
+				height: (210px / 1.333);
+			}
+			@media #{$desctop} {
+				width: (210px / 1.7);
+				height: (210px / 1.7);
+			}
+			@media #{$tablet} {
+				float: left;
+			}
+			@media #{$mobile} {
+				width: 210px;
+				height: 201px;
+				float: none;
+				margin: 30px auto;
+			}
+		}
+	}
+}

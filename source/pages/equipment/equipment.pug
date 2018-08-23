@@ -1,0 +1,177 @@
+extends ../base
+
+block title
+	title Dry Cleaning
+block main
+	.content--cleaning
+		.banner--small
+			.slick-banner-small
+				div
+					.slick-banner-small_box
+						.slick-banner-small_img(style='background-image: url('+ require("./images/banner-photo-2.jpg") +')')
+							.slick-banner-small_inner
+								.container
+									h1 Услуги
+									ul
+										li
+											a(href="./") Главная
+										li
+											a(href="#") Услуги
+										li
+											a(href="equipment.html") Автоэлектроника
+				div
+					.slick-banner-small_box
+						.slick-banner-small_img(style='background-image: url('+ require("./images/banner-photo-3.jpg") +')')
+							.slick-banner-small_inner
+								.container
+									h1 Услуги
+									ul
+										li
+											a(href="./") Главная
+										li
+											a(href="#") Услуги
+										li
+											a(href="equipment.html") Автоэлектроника
+				div
+					.slick-banner-small_box
+						.slick-banner-small_img(style='background-image: url('+ require("./images/banner-photo-4.jpg") +')')
+							.slick-banner-small_inner
+								.container
+									h1 Услуги
+									ul
+										li
+											a(href="./") Главная
+										li
+											a(href="#") Услуги
+										li
+											a(href="equipment.html") Автоэлектроника
+				div
+					.slick-banner-small_box
+						.slick-banner-small_img(style='background-image: url('+ require("./images/banner-photo-5.jpg") +')')
+							.slick-banner-small_inner
+								.container
+									h1 Услуги
+									ul
+										li
+											a(href="./") Главная
+										li
+											a(href="#") Услуги
+										li
+											a(href="equipment.html") Автоэлектроника
+		section.content--main(data-sticky_parent)
+			.container
+				.row
+					.col-sm-8
+						.left-bar
+							.interior-cleaning
+								h2.section-title Автоэлектроника
+								.interior-cleaning_blk
+									.slick-cleaning
+										div
+											.slick-cleaning_box(style='background-image: url('+ require("./images/photo-17.jpg") +')')
+										div
+											.slick-cleaning_box(style='background-image: url('+ require("./images/photo-17.jpg") +')')
+										div
+											.slick-cleaning_box(style='background-image: url('+ require("./images/photo-17.jpg") +')')
+										div
+											.slick-cleaning_box(style='background-image: url('+ require("./images/photo-17.jpg") +')')
+									p.interior-cleaning_text.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia, sapien faucibus sollicitudin ultricies, est libero congue dui, et lobortis quam neque in ante. Donec ullamcorper aliquet nibh eu malesuada. Nam ac erat ut orci consectetur iaculis. Ut vel diam massa. Fusce sodales mi justo, nec vehicula erat volutpat sit amet. Fusce porta, quam sit amet tempus blandit, arcu nibh finibus nisi, ac interdum justo velit a risus. Curabitur elementum mauris a augue varius dictum. In accumsan est arcu, et malesuada ante pulvinar sed. Sed nisl lorem, hendrerit nec odio ac, faucibus fringilla arcu. Maecenas mollis felis non sapien iaculis, sodales suscipit nisl laoreet. Suspendisse vitae porttitor nibh. Phasellus eleifend sapien fermentum sapien tempor, eget lacinia nibh tincidunt. Suspendisse finibus orci diam, vitae porta diam fringilla ut. Proin quis tortor pretium magna lobortis volutpat ac ut magna. Vestibulum sed condimentum tellus, vel dapibus sem. Maecenas dictum tristique placerat.
+							.videos
+								h2.section-title.wow.slideInLeft() Раздел видео
+								.slick-videos#slickVCleaning
+									- for (var i = 0; i < 4; i++) {
+										div
+											.slick-videos_box
+												.slick-videos_video
+													iframe(src="https://www.youtube.com/embed/CzN45Eg9XG4", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen='')
+												.slick-videos_name
+													p.
+														I Flew My Ferrari 6000 Miles To Dubai For PPF
+										div
+											.slick-videos_box
+												.slick-videos_video
+													iframe(src='https://www.youtube.com/embed/lTRftZx2tAo', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+												.slick-videos_name
+													p.
+														High End Detailing Ferrari 458 Finest Signature Detail
+									- }
+							.faq
+								h2.section-title Часто задаваемые вопросы
+								#accordion.panel-group
+									.panel.panel-default
+										.panel-heading
+											h4.panel-title
+												a(data-toggle='collapse', data-parent='#accordion', href='#collapse1').accordion-toggle
+													i.right
+													| Collapsible Group 1
+										#collapse1.panel-collapse.collapse.in
+											.panel-body
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+												| sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+												| minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+												| commodo consequat.
+									.panel.panel-default
+										.panel-heading
+											h4.panel-title
+												a(data-toggle='collapse', data-parent='#accordion', href='#collapse2').accordion-toggle
+													i.right
+													| Collapsible Group 2
+										#collapse2.panel-collapse.collapse
+											.panel-body
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+												| sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+												| minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+												| commodo consequat.
+									.panel.panel-default
+										.panel-heading
+											h4.panel-title
+												a(data-toggle='collapse', data-parent='#accordion', href='#collapse3').accordion-toggle
+													i.right
+													| Collapsible Group 3
+										#collapse3.panel-collapse.collapse
+											.panel-body
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+												| sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+												| minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+												| commodo consequat.
+							.prices
+								h2.section-title Наши цены
+								table.table
+									tbody
+										tr
+											th Ut in porta arcu, a varius ante. Nunc sed tortor vitae leo fringilla ? 
+											th 200 грн
+										tr
+											th Ut in porta arcu, a varius ante. Nunc sed tortor vitae leo fringilla ? 
+											th 200 грн
+										tr
+											th Ut in porta arcu, a varius ante. Nunc sed tortor vitae leo fringilla ? 
+											th 200 грн
+										tr
+											th Ut in porta arcu, a varius ante. Nunc sed tortor vitae leo fringilla ? 
+											th 200 грн
+										tr
+											th Ut in porta arcu, a varius ante. Nunc sed tortor vitae leo fringilla ? 
+											th 200 грн
+					.col-sm-4
+						.navigation#sidebar(data-sticky_column)
+							ul.sidebar
+								li
+									a(href="cleaning.html") Химчистка салона
+								li
+									a(href="restoring.html") Реставрация салона
+								li
+									a(href="polishing.html") Полировка кузова
+								li
+									a(href="nanoceramics.html") Нанесение нано керамики(жидкого стекла)
+								li
+									a(href="armor.html") Оклейка бронепленкой
+								li.active
+									a(href="equipment.html") Автоэлектроника (доп. оборудование)
+								li
+									a(href="restyling.html") Рестайлинг авто
+								li
+									a(href="washing.html") Premium мойка авто
+		include ../blog
+		include ../order

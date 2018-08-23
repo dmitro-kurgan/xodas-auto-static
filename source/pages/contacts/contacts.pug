@@ -1,0 +1,68 @@
+extends ../base
+
+block title
+	title Contacts
+block main
+	.content--contacts
+		.banner--contacts
+			.banner_top
+				.banner_top_content
+					h1.wow.flipInX контакты
+					ul
+						li
+							a(href="./", data-wow-delay='0.5s').wow.flipInX Главная
+						li
+							a(href="contacts.html", data-wow-delay='1s').wow.flipInX контакты
+		section.contacts
+			.container
+				.row
+					.col-sm-6
+						.contacts_left
+							h2.section-title.wow.fadeInDown(data-wow-duration='1s') Our contacts
+							ul.contacts_info
+								li.wow.fadeIn(data-wow-delay='0.5s')
+									p We are open: Mn-Fr: 10 am – 8 pm
+								li.wow.fadeIn(data-wow-delay='0.75s')
+									span E-MAIL:
+									a(href="mailto:xodasauto@gmail.com") xodasauto@gmail.com
+								li.wow.fadeIn(data-wow-delay='1s')
+									span ADDRESS:
+									p Keas 69 Str.15234, Ukraine Kharkov
+								li.wow.fadeIn(data-wow-delay='1.25s')
+									span Phone:
+									a(href="+3800000000") +(380) 00 00 000
+								li.wow.fadeIn(data-wow-delay='1.5s')
+									span social networks:
+									ul.contacts_socials
+										li
+											a(href="#")
+												span.fa.fa-instagram
+										li
+											a(href="#")
+												span.fa.fa-facebook
+										li
+											a(href="#")
+												span.fa.fa-youtube-play
+										li
+											a(href="#")
+												span.fa.fa-twitter
+										li
+											a(href="#")
+												span.fa.fa-vk
+					.col-sm-6
+						.contacts_right
+							h2.section-title.wow.fadeInDown(data-wow-duration='1s') Let's get in touch
+							form.contacts_form
+								.form-group.wow.fadeIn(data-wow-delay='0.5s')
+									input.form-control(type='name', placeholder="Your name")
+								.form-group.wow.fadeIn(data-wow-delay='0.75s')
+									input.form-control(type='email', placeholder="Your e-mail")
+								.form-group.wow.fadeIn(data-wow-delay='1s')
+									input.form-control(type='email', placeholder="Your phone")
+								.form-group.wow.fadeIn(data-wow-delay='1.25s')
+									textarea#message.form-control.wow.fadeIn(rows='5', placeholder="Your message")
+									button.wow.fadeIn(type='submit', data-wow-delay='1.75s') Send
+		section.map.wow.pulse
+				.map_blk#map
+		include ../order
+		
